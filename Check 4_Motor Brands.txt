@@ -1,0 +1,9 @@
+motor_brands = ["Ducati", "Harley Davidson", "Kawasaki", "Yamaha", "Suzuki"]
+
+motor_brands.insert(3, "Honda")
+
+print(motor_brands)
+
+del motor_brands[-1]
+
+print(motor_brands)

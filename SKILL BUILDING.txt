@@ -1,0 +1,40 @@
+1. num = int(input("Enter a number: "))
+
+   if num > 0:
+      print("POSITIVE")
+   else:
+      print("NEGATIVE")
+
+2. student_average = {}
+
+   student_name = input("Enter Student's Name: ")
+
+   sub1 = float(input("Enter the grade of 1st Subject: "))
+   sub2 = float(input("Enter the grade of 2nd Subject: "))
+   sub3 = float(input("Enter the grade of 3rd Subject: "))
+   sub4 = float(input("Enter the grade of 4th Subject: "))
+   sub5 = float(input("Enter the grade of 5th Subject: "))
+
+   average = (sub1 + sub2 + sub3 + sub4 + sub5) / 5
+
+   student_average[student_name] = average
+
+   if average >= 85:
+     print (f"{student_name} average: {average: .2f} and With Highest Honor")
+   elif average >= 80:
+     print (f"{student_name} average: {average: .2f} and With Honor")
+   elif average >= 75:
+     print (f"{student_name} average: {average: .2f} and PASSED")
+   else:
+     print (f"{student_name} average: {average: .2f} and FAILED")
+
+3. user = "Harold" 
+   psd = "123"
+
+   user1 = input("Enter your Username: ")
+   psd1 = input("Enter your Password: ")
+
+   if user1 == user and psd1 == psd:
+      print("Login Successful")
+   else:
+      print("Login Unsuccessful")

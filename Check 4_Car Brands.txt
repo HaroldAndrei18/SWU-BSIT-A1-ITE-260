@@ -1,0 +1,7 @@
+car_brands = ["Volkswagen", "Chrysler", "Porsche", "Lamborghini", "Pagani"]
+
+car_brands.append("Ford")
+car_brands.append("Nissan")
+car_brands.append("Cadillac")
+
+print(car_brands)

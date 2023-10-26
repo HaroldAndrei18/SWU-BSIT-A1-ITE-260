@@ -1,0 +1,7 @@
+fname = input ("Enter your First Name: ")
+lname = input ("Enter your Last Name: ")
+gender = input ("Enter your Gender: ")
+number = input ("Enter your Contact Number: ")
+location = input ("Enter your Address: ")
+
+print(f"Name: {fname} {lname}, Gender: {gender}, Contact Number: {number}, Address: {location}")

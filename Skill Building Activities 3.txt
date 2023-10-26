@@ -1,0 +1,8 @@
+car_brands = ["Toyota", "Mazda", "Lamborghini", "Suzuki", "Tesla"]
+
+car_brands.insert(2,"Lotus")
+print(car_brands)
+
+del car_brands[-1]
+
+print(car_brands)

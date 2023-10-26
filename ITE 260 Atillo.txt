@@ -1,0 +1,48 @@
+1. num = 10
+
+while numr >= 1:
+    print(num)
+    num -= 1
+
+2. sum = 0
+count = 0
+
+while count < 5:
+
+       num = int(input("Enter a Number: "))
+
+       sum += num
+
+       count += 1
+
+print("Total: ", sum)
+
+3. snum = int(input("Enter a specified number: "))
+
+count = 0
+
+while count <= snum:
+    print(count)
+    count += 2
+
+4. snum = int(input("Enter a specified number: "))
+mess = str(input("Enter a message: "))
+
+count = 1
+
+while count <= snum and mess:
+    print(count and mess)
+    count += 1
+
+5. secret_word = "Toyota"
+correct_guess = False
+
+while not correct_guess:
+    print("Welcome to the Word Guessing Game!")
+    guess = input("Enter a Word: ")
+
+    if guess == secret_word:
+       print("CONGRATS!!!")
+       correct_guess = True
+    else:
+       print("Woops! Try Again")

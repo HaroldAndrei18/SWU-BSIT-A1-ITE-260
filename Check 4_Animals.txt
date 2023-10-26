@@ -1,0 +1,5 @@
+animal_names = ["Shark", "Newt", "Cobra", "Hyena", "Hawk"]
+
+animal_names.remove("Newt")
+
+print(animal_names)

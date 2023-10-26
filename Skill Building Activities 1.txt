@@ -1,0 +1,3 @@
+name = input("Enter your Name: ")
+age = int(input("Enter Your Age: "))
+print("Please share the information asked for:\n", name +  str(age))

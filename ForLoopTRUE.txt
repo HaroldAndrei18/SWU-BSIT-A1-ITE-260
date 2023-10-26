@@ -1,0 +1,90 @@
+questions = ("", "", "","", "", "","", "", "","","","", "", "","", "", "","", "", "","","","", "", "","", "", "","", "", "","","","",)
+
+ans = ()
+guesses = []
+score = 0
+qnum = 0
+
+
+user = input("Register your Username: ")
+passwrd = input("Register your Password: ")
+
+
+for i in range(5):
+    print("        Enter Account")
+    username = input("Username: ")
+    password = input("Password: ")
+
+    if username == user and password == passwrd:
+        print("Login Successful")
+        questions = ("ANSWER IN ALL CAPS \n \nTRUE or FALSE: \n \n1. A for loop allows for the repeated execution of a collection of criteria up until a condition is met.",
+                    "2. For loops are used for insequential traversal.",
+                    "3. For loops execute commands in any number of times.",
+                    "4. The Python programming language permits the use of loops inside loops.",
+                    "5. A for loop can be inside a while loop.",
+                    "6. The stop statement is used inside the loop to exit inside the loop.",
+                    "7. Given that the looping condition is always true and the loop never ends, an finite loop is one that never ends.", 
+                    "8. Range () is a function that either accepts a single number and behaves like a list of numbers starting at zero and listing all the numbers until the number before the one specified, or it accepts two numbers separated by commas and behaves like a slice, starting at the first number and listing all the numbers after the last one.", 
+                    "9. The continue statement allows you to bypass the current iteration of any loop.", 
+                    "10. In python, the by-pass statement is considered a non-operation statement, which means it consumes the execution cycle like a valid python statement, but nothing happens actually when by-pass is executed.",
+                    "IDENTIFICATION: Identify the Control Statements being mentioned in the questions below\n \n11. It is used to alter the code exectution: ",
+                    "12. It is used to exit out of the loop: ",
+                    "13. It allows you to bypass the current iteration of any loop: ",
+                    "14. It is considered a no-operation statement, which means it consumes the execution cycle like a valid Python statement",
+                    "15. This code is useful when you want to terminate the loop as soon as possible: ",
+                    "16. This code does not end the loop but rather moves to the next iteration: ",
+                    "17. This code is much like a statement, it is generally used to indicate null or unimplemented functions and loops: ",
+                    "18. What statements in a loop alter the execution sequence.",
+                    "19. It reduces execution time.",
+                    "20. It does not end the loop but rather moves on to the next iteration.",
+                    "MULTIPLE CHOICE: \n \n21. These operators are used on conditional statements that yield a result of either a TRUE or FALSE value: \n \nA. Binary Operators B. Numerical Operators C. Logical Operators",
+                    "22. True if both the operands are true. \n A. And B. Or C. Not",
+                    "23. Examines multiple conditions. \n A. And Operator B. Or Operator C. Not Operator",
+                    "24. Who will group the operands for the operator with the highest precedence first? \n A. JavaScript B. Python C. Java",
+                    "25. What is the precedence of NOT operator. \n A. High B. Medium C. Low",
+                    "26. True if the operand is false. \n A. And B. Or C. Not",
+                    "27. Will evaluate them from the left to right. \n A. JavaScript B. Python C. Java",
+                    "28. Is only valid for one condition. \n A. And Operator B. Or Operator C. Not Operator",
+                    "29. Determines whether two criteria are True/False at the same time. \n A. And Operator B. Or Operator C. Not Operator",
+                    "30. What is the precedence of OR operator. \n A. High B. Medium C. Low")
+                                
+                    
+        ans = ("TRUE", "FALSE", "TRUE","FALSE","TRUE","FALSE","FALSE", "FALSE", "TRUE","FALSE", 
+            "CONTROL STATEMENT", "BREAK STATEMENT", "CONTINUE STATEMENT", "PASS STATEMENT", "BREAK STATEMENT", "CONTINUE STATEMENT", "PASS STATEMENT","CONTROL STATEMENT","BREAK","CONTINUE STATEMENT",
+            "A","B","B","A","C","B","C","A","C","B")
+        score = 0
+        qnum = 0
+
+        for question in questions:
+            print()
+            print(question)
+            guess = input("Enter your answer: ")
+            if guess == ans[qnum]:
+                print()
+                print("Correct!")
+                score += 1
+            else:
+                print()
+                print("Incorrect!")
+            qnum += 1
+            guesses.append(guess)
+                
+                
+    else: 
+        print("Login Failed, Try Again")
+        continue
+
+    print("Your score is: ",score,'/30')
+    print("Your average is",round(score/3))
+    if score == 30:
+        print("Your perfect(wrong grammar)")
+    elif score >= 21:
+        print("Hapit ra mada")
+    elif score >= 16:
+        print("Great score")
+    elif score >= 11:
+        print("Pass")
+    else:
+        print("Ay nag skwela")
+        break
+

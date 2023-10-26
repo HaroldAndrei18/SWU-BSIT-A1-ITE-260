@@ -1,0 +1,5 @@
+fruit_types = ["Dragonfruit", "Durian", "Mango", "Apple", "Watermelon"]
+
+fruit_types[4] = "Rambutan"
+
+print(fruit_types)
